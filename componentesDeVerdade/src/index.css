@@ -1,3 +1,14 @@
-*{
-  background-color: #282c34;
+:root{
+  --cor-1: #386641;
+  --cor-2: #6A994E;
+  --cor-3: #A7C957;
+  --cor-4: #F2E8CF;
+  --cor-5: #BC4749;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--cor-4);
+  color: var(--cor-4);
 }
