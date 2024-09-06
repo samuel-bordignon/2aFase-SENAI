@@ -7,10 +7,14 @@ function ParImpar() {
 
     const verificarParImpar = () => {
         let numero = Number(prompt("Digite um número:"))
-        if (numero % 2 === 0) {
-            setResultado("Par")
-        } else {
-            setResultado("Ímpar")
+        if (numero % 2 === 0 && numero > 0) {
+            setResultado("O número digitado é par e positivo")
+        } else if(numero % 2 === 0 && numero < 0){
+            setResultado("O número digitado é par e negativo")
+        }else if(numero % 2 != 0 && numero > 0){
+            setResultado("O número digitado é impar e positivo")
+        }else if(numero % 2 != 0 && numero < 0){
+            setResultado("O número digitado é imapar e negativo")
         }
     }
   return (
