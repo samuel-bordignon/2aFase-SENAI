@@ -3,11 +3,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: solid 1px black;
+    border: none;
     padding: 20px;
     border-radius: 10px;
     margin: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
 }
 .botao-num{
     background-color: #4CAF50;
@@ -27,5 +28,4 @@
 .grid-num{
     display: flex;
     flex-wrap: wrap;
-    border: solid 1px black;
 }

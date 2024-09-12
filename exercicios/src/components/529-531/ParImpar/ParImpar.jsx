@@ -19,7 +19,7 @@ function ParImpar() {
     }
   return (
     <div className='ParImpar-container'>
-        <h2>Exercicio para verificar se um número é par ou ímpar</h2>
+        <h2>Exercicio para verificar se um número é par ou ímpar e o seu sinal</h2>
         <button onClick={verificarParImpar}>Clique</button>
         <div>
             <h3>Resultado: {resultado}</h3>

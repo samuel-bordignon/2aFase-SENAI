@@ -1,32 +1,29 @@
 import './App.css'
+import { useState } from 'react'
 import StarUber from './components/518-519/StarUber/StarUber'
-import Emprestimo from './components/529-531/Emprestimo/Emprestimo'
-import Exemplos from './components/529-531/Exempos/Exemplos'
-import Media from './components/529-531/Media/Media'
-import ParImpar from './components/529-531/ParImpar/ParImpar'
-import SinalizacaoNumeros from './components/529-531/SinalizacaoNumeros/SinalizacaoNumeros'
+import ValorVenda from './components/523-525/ValorVenda/ValorVenda'
+import Atividade529_531 from './Pages/atividade529_531'
 
 
 function App() {
-
+const [pagina, setPagina] =useState()
   return (
     <>
-    <div className='atividades-container'>
-      <div className='a529-531-container'>
-        <Emprestimo />
-        <ParImpar />
-        <SinalizacaoNumeros />
-        <Media />
-        <Exemplos />
+    
+      <div className='atividades-container'>
+        <div className='a523-525-container'>
+          <h1>Atividades da 523-525</h1>
+          <ValorVenda />
 
+        </div>
+        <div className='a518-519-container'>
+          <h1>Atividades da 518-519</h1>
+          <StarUber />
+
+        </div>
+        <Atividade529_531 />
+      
       </div>
-
-      <div className='a518-519-container'>
-        <StarUber />
-
-      </div>
-
-    </div>
     </>
   )
 }

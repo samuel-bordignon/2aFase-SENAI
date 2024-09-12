@@ -7,12 +7,18 @@ function Emprestimo() {
     const [resultado, setResultado] = useState()
 
     const verificarEmprestimo = () => {
+
         let salario = Number(prompt("Digite o valor do salário: "))
         let emprestimo = Number(prompt("Digite o valor do empréstimo: "))
         let prestacoes = Number(prompt("Digite o número de prestações: "))
 
         let valorPrestacao = emprestimo / prestacoes
         let porcentagemSalario = salario * 0.3
+
+        if ((isNaN(salario) || salario <= 0) || (isNaN(emprestimo) || emprestimo <= 0) || (isNaN(prestacoes) || prestacoes <= 0)) {
+            setResultado(`Algum valor digitado é inválido`)
+            return
+        }
         
         if(salario > 0 && emprestimo > 0 && prestacoes > 0) {
             if(valorPrestacao <= porcentagemSalario){

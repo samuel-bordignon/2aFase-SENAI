@@ -1,8 +1,43 @@
-.atividades-container{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.atividades-container {
     display: flex;
-    
-    
+    flex-wrap: wrap;
+
+
 }
-.a529-531-container, a518-519-container{
+
+.a529-531-container,
+.a518-519-container,
+.a523-525-container {
     width: 50%;
 }
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+/* button{
+    width: 300px;
+    height: 25px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+} */
+
+button {
+  color: rgb(0, 0, 0); /* Cor do texto do botão */
+  border: none; /* Sem borda */
+  padding: 12px 24px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor em forma de mão */
+  border-radius: 6px; /* Bordas arredondadas */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transição suave para sombra e transformação */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra para efeito 3D */
+  outline: none; /* Remove o contorno padrão ao focar */
+  }
+
+  button:active{
+
+  }

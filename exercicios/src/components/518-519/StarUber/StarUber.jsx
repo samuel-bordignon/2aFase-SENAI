@@ -19,23 +19,28 @@ function StarUber() {
             { nome: "meses", Valor: 60 * 60 * 24 * 30 },
             { nome: "anos", Valor: 60 * 60 * 24 * 365 },
         ]
+        if (isNaN(distancia) || distancia <= 0) {
+            setResultado(`O valor digitado é inválido`)
+            return
+        }
 
         unidades.forEach((unidade) => {
             console.log(unidade)
-            if(tempoCorrida >= unidade.Valor){
+            if (tempoCorrida >= unidade.Valor) {
                 tempoFinal = tempoCorrida / unidade.Valor
                 unidadeEscolhida = unidade.nome
             }
         })
 
-        setResultado(`${(tempoFinal).toFixed(2)} ${unidadeEscolhida}`)
+        setResultado(`Tempo total da corrida: ${(tempoFinal).toFixed(2
+            )} ${unidadeEscolhida}`)
     }
 
     return (
         <div className='StarUber-container'>
             <h2>Atividade para ajudar o energúmeno do Juka a ganhar dinheiro, como uber, num futuro intergaláctico</h2>
             <button onClick={calculaVelo}>Calcular o tempo da corrida</button>
-            <h3>Tempo total da corrida: {resultado}.</h3>
+            <h3>{resultado}</h3>
         </div>
     )
 }
