@@ -1,5 +1,4 @@
-import React from 'react'
-import ValorVenda from '../Components/523-525/ValorVenda'
+import ValorVenda from '../components/523-525/ValorVenda/ValorVenda'
 
 function Atividade523_525() {
   return (
