@@ -3,13 +3,12 @@
 .atividades-container {
     display: flex;
     flex-wrap: wrap;
-
-
 }
 
 .a529-531-container,
 .a518-519-container,
-.a523-525-container {
+.a523-525-container,
+.SQ02 {
     width: 50%;
 }
 
@@ -18,26 +17,25 @@
     font-weight: 300;
     font-style: normal;
 }
-/* button{
-    width: 300px;
-    height: 25px;
-    border: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-} */
 
 button {
-  color: rgb(0, 0, 0); /* Cor do texto do botão */
-  border: none; /* Sem borda */
-  padding: 12px 24px; /* Espaçamento interno */
-  font-size: 16px; /* Tamanho da fonte */
-  cursor: pointer; /* Cursor em forma de mão */
-  border-radius: 6px; /* Bordas arredondadas */
-  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transição suave para sombra e transformação */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra para efeito 3D */
-  outline: none; /* Remove o contorno padrão ao focar */
-  }
+    background-color: rgb(42, 99, 255);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
 
-  button:active{
-
-  }
+input {
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    outline: none;
+}
