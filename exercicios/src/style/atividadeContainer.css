@@ -1,0 +1,36 @@
+.atividade-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #3B3B3B;
+    border: solid 3px #3A3A3A;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 45%;
+    height: 240px;
+}
+.form-container{
+    width: 90%;
+}
+
+.btn-form{
+    margin-left: 8%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+    text-align: start;
+}
+.error {
+    visibility: visible;
+    text-align: start;
+    color: red; 
+}
