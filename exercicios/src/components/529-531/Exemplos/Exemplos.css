@@ -9,11 +9,65 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px 4px;
     cursor: pointer;
+   
+}
+.botao-op{
+    background-color:  rgb(42, 99, 255);;
+    width: 50px;
+    height: 50px;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    cursor: pointer;
+
 }
 
 .grid-num{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
+    width: 174px;
+    height: 228px;
+    
+}
+
+.grid-op{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 58px;
+    height: 228px;
+}
+.grid-all-key{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 232px;
+    height: 228px;
+
+}
+.display-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 226px;
+    height: 60px;
+    background-color: #fa0808;
+    border: none;
+    margin: 4px 4px;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
 }

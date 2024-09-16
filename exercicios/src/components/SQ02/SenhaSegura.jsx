@@ -28,22 +28,22 @@ function SenhaSegura() {
 
     return (
         <div className='atividade-container'>
-            <h1>Verificador de senha</h1>
             <div className='form-container'>
-                <label>
-                    Senha <br />
-                    <input
-                        type="password" 
-                        
-                        placeholder='Digite sua Senha'
-                        value={senha}
-                        onChange={(event) => setSenha(event.target.value)}
-                    />
-                </label>
+                <h2>Verificador de senha</h2>
+                <input
+                    type="password"
+                    placeholder='Digite sua Senha'
+                    value={senha}
+                    onChange={(event) => setSenha(event.target.value)}
+                />
+
                 <button className='btn-form' onClick={verificaSenha}>Verificar Senha</button>
-                <h3 className={error ? "error" : ativo ? "visible" : "hidden"}>
-                    {resultado}
-                </h3>
+                <div>
+                    <h3 className={error ? "error" : ativo ? "visible" : "hidden"}>
+                        {resultado}
+                    </h3>
+
+                </div>
             </div>
 
         </div>

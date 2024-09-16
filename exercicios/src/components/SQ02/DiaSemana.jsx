@@ -45,20 +45,24 @@ function DiaSemana() {
 
     return (
         <div className='atividade-container'>
-            <h1>Atividade para descobrir o dia da semana</h1>
 
             <div className='form-container'>
-                <label htmlFor="">Dia <br />
-                    <input type="number" placeholder='Digite o dia da semana em numeral'
-                        value={diaInpt}
-                        onChange={(event) => { setDiaInpt(event.target.value) }}
+                <h2>Atividade para descobrir o dia da semana</h2>
 
-                    />
-                </label>
+                <input
+                    type="number"
+                    placeholder='Digite o dia da semana em numeral'
+                    value={diaInpt}
+                    onChange={(event) => { setDiaInpt(event.target.value) }}
+
+                />
                 <button className='btn-form' onClick={verificaDia}>Verificar Dia</button>
-                <h3 className={error ? "error" : ativo ? "visible" : "hidden"}>
-                    {resultado}
-                </h3>
+                <div>
+                    <h3 className={error ? "error" : ativo ? "visible" : "hidden"}>
+                        {resultado}
+                    </h3>
+
+                </div>
             </div>
 
         </div>

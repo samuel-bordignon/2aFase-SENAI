@@ -1,4 +1,5 @@
 import Adivinhacao from '../components/SQ02/Adivinhacao'
+import Calculadora from '../components/SQ02/Calculadora'
 import DiaSemana from '../components/SQ02/DiaSemana'
 import ParImparSQ02 from '../components/SQ02/ParImparSQ02'
 import SenhaSegura from '../components/SQ02/SenhaSegura'
@@ -16,6 +17,7 @@ function SQ02() {
                 <Adivinhacao />
                 <DiaSemana />
                 <ParImparSQ02 />
+                <Calculadora />
                 <SenhaSegura />
 
             </div>

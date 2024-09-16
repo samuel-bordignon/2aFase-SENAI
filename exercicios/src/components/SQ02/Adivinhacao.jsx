@@ -41,16 +41,23 @@ function Adivinhacao() {
     return (
 
         <div className='atividade-container'>
-            <h1>Jogo de Adivinhação</h1>
             <div className='form-container'>
-                <label htmlFor="">Palpite
-                    <br /><input type="number" placeholder='Digite um palpite entre 10 e 0' value={InputPalpite} onChange={(event) => { setInputPalpite(event.target.value) }}
-                    /></label>
+                <h2>Jogo de Adivinhação</h2>
+
+                <input
+                    type="number"
+                    placeholder='Digite um palpite entre 10 e 0'
+                    value={InputPalpite}
+                    onChange={(event) => { setInputPalpite(event.target.value) }}
+                />
 
                 <button className='btn-form' onClick={verificaPalpite}>Verificar Palpite</button>
-                <h3 className={error ? "error" : ativo ? "visible" : "hidden"}>
-                    {resultado}
-                </h3>
+                <div>
+                    <h3 className={error ? "error" : ativo ? "visible" : "hidden"}>
+                        {resultado}
+                    </h3>
+
+                </div>
 
             </div>
         </div>
