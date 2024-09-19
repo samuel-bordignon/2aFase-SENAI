@@ -58,7 +58,6 @@ function Adivinhacao() {
                     </h3>
 
                 </div>
-
             </div>
         </div>
     )

@@ -3,6 +3,7 @@ body{
     background-color: #282828;
     margin: 0;
     padding: 0;
+    color: white;
     
 }
 * {
@@ -26,6 +27,7 @@ button {
 
 input {
     font-size: 16px;
+    color: white;
     background-color: #3B3B3B;
     cursor: pointer;
     border-radius: 4px;

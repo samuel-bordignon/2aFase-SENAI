@@ -19,7 +19,7 @@ function ValidaIdade() {
         }
         setAtivo(true)
         setError(false)
-        setResultado('')
+        setInputIdade('')
     }
 
     return (

@@ -7,11 +7,12 @@ import Atividade523_525 from './Pages/Atividade523_525'
 import MenuPaginas from './components/MenuPaginas/MenuPaginas'
 import SQ02 from './Pages/SQ02'
 import Atividade529_531 from './Pages/Atividade529_531'
+import Atividade57 from './Pages/Atividade57'
 
 
 function App() {
   const [paginaAtual, setPaginaAtual] = useState(1)
-  const totalPaginas = 4
+  const totalPaginas = 5
 
   const renderizaPagina = () => {
     switch (paginaAtual) {
@@ -23,6 +24,8 @@ function App() {
         return <Atividade529_531 />
       case 4:
         return <SQ02 />
+      case 5:
+        return <Atividade57 />
       default:
         return <Atividade518_519 />
     }
