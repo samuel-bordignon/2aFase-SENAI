@@ -7,19 +7,22 @@ function ValidaIdade() {
     const [error, setError] = useState(false)
 
     function validarIdade() {
-        if (isNaN(inputIdade) || inputIdade < 0) {
+        
+        if (isNaN(inputIdade) || inputIdade <= 0) {
             setResultado('Digite uma idade válida')
             setError(true)
             setAtivo(false)
             return
-        } else if (inputIdade < 18) {
+        } 
+        
+        if (inputIdade < 18) {
             setResultado('Você é de menor, ta ligado?🍼🍼🍼🍼🍼🍼🍼🍼🍼')
         } else {
             setResultado('Você é maior de idade 👴👵🧓')
         }
         setAtivo(true)
         setError(false)
-        setResultado('')
+        setInputIdade('')
     }
 
     return (
