@@ -83,3 +83,18 @@
     color: red; 
 }
 
+#container-710 input{
+    width: 100px;
+}
+
+#container-710 button{
+width: 100%;
+}
+
+#container-710{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid;
+}
+

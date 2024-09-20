@@ -1,11 +1,15 @@
 import React from 'react'
 
-function resultIBGE() {
+function ResultIBGE(props) {
     return (
         <div>
-            
+            {props.resultado.maiorAltura}
+            {props.resultado.menorAltura}
+            {props.resultado.mediaAlturaMulheres}
+            {props.resultado.mediaAlturaPopulacao}
+            {props.resultado.percentualHomens}
         </div>
     )
 }
 
-export default resultIBGE
+export default ResultIBGE

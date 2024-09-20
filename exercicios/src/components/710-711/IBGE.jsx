@@ -8,6 +8,7 @@ um programa que leia os dados de 10 pessoas e informe:
 
 import React from 'react'
 import { useState } from 'react'
+import ResultIBGE from './resultIBGE'
 
 function IBGE() {
     const [inputAltura, setInputAltura] = useState('')
@@ -19,7 +20,7 @@ function IBGE() {
     const [percentualHomens, setPercentualHomens] = useState(0)
     const [error, setError] = useState(false)
     const [pessoas, setPessoas] = useState([])
-    const [contador, setContador] = useState(0)
+    const [contador, setContador] = useState(1)
     const [resultado, setResultado] = useState('')
 
     function adicionarPessoa() {
@@ -34,7 +35,7 @@ function IBGE() {
         setError(false)
     }
 
-    function criarRelatorio(){
+    function criarRelatorio() {
         let relatorio = {
             maiorAltura: maiorAltura,
             menorAltura: menorAltura,
@@ -42,6 +43,7 @@ function IBGE() {
             mediaAlturaPopulacao: mediaAlturaPopulacao,
             percentualHomens: percentualHomens
         }
+        setResultado(relatorio)
     }
 
     function calcularDados() {
@@ -89,7 +91,8 @@ function IBGE() {
     return (
         <div className='atividade-container'>
             <h2>IBGE</h2>
-            <div className=''>
+            <p>Digite as informações da pessoa número {contador}</p>
+            <div className='form-container' id='container-710'>
                 <label htmlFor="inputGenero">Gênero <br />
                     <input
                         id='inputGenero'
@@ -110,10 +113,10 @@ function IBGE() {
                     />
                 </label>
                 {error && <span className='error'>Digite um valor válido</span>}
-                {pessoas.length < 10 && <button className='btn-form' onClick={adicionarPessoa}>Adicionar Pessoa</button>}
-                {pessoas.length === 10 && <button className='btn-form' onClick={calcularDados}>Calcular Dados</button>}
+                {pessoas.length < 10 && <button  onClick={adicionarPessoa}>Adicionar Pessoa</button>}
+                {pessoas.length === 10 && <button  onClick={calcularDados}>Calcular Dados</button>}
+                {resultado && <ResultIBGE resultado={resultado} />}
 
-            
 
 
             </div>
