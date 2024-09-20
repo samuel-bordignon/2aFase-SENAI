@@ -9,14 +9,14 @@ function ParImparSQ02() {
     function verificaNumero() {
         const numero = Number(inputNumero)
 
-        
+
         if (numero % 2 === 0) {
             setResultado('O número é par')
         } else if (numero % 2 !== 0) {
             setResultado('O número é ímpar')
         }
-            
-        
+
+
         setAtivo(true)
         setError(false)
         setInputNumero('')
@@ -26,14 +26,16 @@ function ParImparSQ02() {
         <div className='atividade-container'>
             <div className='form-container'>
                 <h2>Verificador de numero par e ímpar</h2>
+                <div className='btn-inpt-container'>
+                    <input
+                        type="number"
+                        placeholder='Digite um número'
+                        value={inputNumero}
+                        onChange={(event) => setInputNumero(event.target.value)}
+                    />
+                    <button className='btn-form' onClick={verificaNumero}>Verificar Número</button>
 
-                <input
-                    type="number"
-                    placeholder='Digite um número'
-                    value={inputNumero}
-                    onChange={(event) => setInputNumero(event.target.value)}
-                />
-                <button className='btn-form' onClick={verificaNumero}>Verificar Número</button>
+                </div>
 
                 <div>
                     <h3 className={ativo ? "visible" : "hidden"}>

@@ -11,7 +11,7 @@
     margin: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 45%;
-    height: 240px;
+    max-height: 10%;
 }
 #container-calculadora{
     height: 270px;
@@ -30,8 +30,43 @@
     height: 70px;
 }
 
+.tabela-container{
+    margin: auto;
+    display: flex;
+    width: 85%;
+}
+
+.tabela-numbers{
+    text-align: end;
+    width: 30%;
+    
+}
+.tabela-description{
+    text-align: start;
+    width: 70%;
+}
+
+.vermelho{
+    color: red;
+}
+
+.verde{
+    color: green;
+}
+
 .btn-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 8%;
+    height: 45px;
+
+}
+
+.btn-inpt-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hidden {

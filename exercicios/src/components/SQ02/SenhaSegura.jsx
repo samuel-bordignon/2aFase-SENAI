@@ -30,14 +30,17 @@ function SenhaSegura() {
         <div className='atividade-container'>
             <div className='form-container'>
                 <h2>Verificador de senha</h2>
-                <input
-                    type="password"
-                    placeholder='Digite sua Senha'
-                    value={senha}
-                    onChange={(event) => setSenha(event.target.value)}
-                />
+                <div className='btn-inpt-container'>
+                    <input
+                        type="password"
+                        placeholder='Digite sua Senha'
+                        value={senha}
+                        onChange={(event) => setSenha(event.target.value)}
+                    />
 
-                <button className='btn-form' onClick={verificaSenha}>Verificar Senha</button>
+                    <button className='btn-form' onClick={verificaSenha}>Verificar Senha</button>
+
+                </div>
                 <div>
                     <h3 className={error ? "error" : ativo ? "visible" : "hidden"}>
                         {resultado}
