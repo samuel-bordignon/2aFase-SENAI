@@ -19,6 +19,7 @@ body{
 button {
     background-color: rgb(42, 99, 255);
     border: none;
+    color: white;
     padding: 10px 24px;
     font-size: 16px;
     cursor: pointer;
@@ -34,7 +35,7 @@ input {
     background-color: #3B3B3B;
     cursor: pointer;
     border-radius: 4px;
-    border: 2px solid #282828;
+    border: 2px solid #767676;
     outline: none;
     height: 40px ;
     width: 60%;

@@ -92,13 +92,14 @@ function IBGE() {
         <div className='atividade-container'>
             <h2>IBGE</h2>
             <p>Digite as informações da pessoa número {contador}</p>
-            <div className='form-container' id='container-710'>
+            <div className='form-ibge'>
                 <label htmlFor="inputGenero">Gênero <br />
                     <input
                         id='inputGenero'
                         type='text'
                         placeholder='Digite o gênero da pessoa'
                         value={inputGenero}
+                        className='input-info'
                         onChange={(e) => setInputGenero(e.target.value)}
                     />
 
@@ -109,17 +110,18 @@ function IBGE() {
                         type='number'
                         placeholder='Digite a altura da pessoa'
                         value={inputAltura}
+                        className='input-info'
                         onChange={(e) => setInputAltura(e.target.value)}
                     />
                 </label>
-                {error && <span className='error'>Digite um valor válido</span>}
                 {pessoas.length < 10 && <button  onClick={adicionarPessoa}>Adicionar Pessoa</button>}
                 {pessoas.length === 10 && <button  onClick={calcularDados}>Calcular Dados</button>}
-                {resultado && <ResultIBGE resultado={resultado} />}
 
 
 
             </div>
+                {error && <span className='error'>Digite um valor válido</span>}
+                {resultado && <ResultIBGE resultado={resultado} />}
         </div>
     )
 }

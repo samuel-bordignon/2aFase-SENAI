@@ -1,4 +1,4 @@
-.atividade-container{
+.atividade-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,48 +13,50 @@
     width: 45%;
     max-height: 10%;
 }
-#container-calculadora{
+
+#container-calculadora {
     height: 270px;
 }
 
-.form-container{
+.form-container {
     width: 90%;
 }
 
-.form-container h2{
+.form-container h2 {
     text-align: start;
     margin-bottom: 50px;
 }
 
-.form-container div{
+.form-container div {
     height: 70px;
 }
 
-.tabela-container{
+.tabela-container {
     margin: auto;
     display: flex;
     width: 85%;
 }
 
-.tabela-numbers{
+.tabela-numbers {
     text-align: end;
     width: 30%;
-    
+
 }
-.tabela-description{
+
+.tabela-description {
     text-align: start;
     width: 70%;
 }
 
-.vermelho{
+.vermelho {
     color: red;
 }
 
-.verde{
+.verde {
     color: green;
 }
 
-.btn-form{
+.btn-form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +65,7 @@
 
 }
 
-.btn-inpt-container{
+.btn-inpt-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,24 +79,25 @@
     visibility: visible;
     text-align: start;
 }
+
 .error {
     visibility: visible;
     text-align: start;
-    color: red; 
+    color: red;
 }
 
-#container-710 input{
-    width: 100px;
+.input-info {
+    width: 190%;
 }
 
-#container-710 button{
-width: 100%;
+.form-ibge button {
+    width: 100%;
 }
 
-#container-710{
+.form-ibge {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
     border: solid;
 }
-
