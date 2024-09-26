@@ -27,7 +27,7 @@ function Mapa() {
       if (data.status && data.status !== 200) {
         throw new Error('CEP não encontrado.')
       }
-      return data   
+      return data
       // Retorna o objeto com as informações do CEP
     } catch (error) {
       console.error('Erro ao obter endereço:', error)
@@ -99,6 +99,31 @@ function Mapa() {
       setError('Erro ao obter os endereços.')
     }
   }
+  // Função para converter segundos em outras unidades de tempo 
+  const converterTempo = (segundos) => {
+    let unidades = [
+      { nome: "segundos", Valor: 1 },
+      { nome: "minutos", Valor: 60 },
+      { nome: "horas", Valor: 60 * 60 },
+      { nome: "dias", Valor: 60 * 60 * 24 },
+      { nome: "meses", Valor: 60 * 60 * 24 * 30 },
+      { nome: "anos", Valor: 60 * 60 * 24 * 365 },
+    ]
+    let unidadeEscolhida = ""
+    let tempoFinal = 0
+
+
+    unidades.forEach((unidade) => {
+      console.log(unidade)
+      if (tempoCorrida >= unidade.Valor) {
+        tempoFinal = tempoCorrida / unidade.Valor
+        unidadeEscolhida = unidade.nome
+
+      }
+    })
+    return tempoFinal + " " + unidadeEscolhida;
+  }
+
 
   return (
     <div>
