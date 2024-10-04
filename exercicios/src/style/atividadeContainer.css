@@ -87,11 +87,11 @@
 }
 
 .input-info {
-    width: 190%;
+    width: 80%;
 }
 
 .form-ibge button {
-    width: 100%;
+    width: 81%;
 }
 
 .form-ibge {
@@ -99,5 +99,4 @@
     flex-direction: column;
     align-items: center;
     width: 90%;
-    border: solid;
 }
