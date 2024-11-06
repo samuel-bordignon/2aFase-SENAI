@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Listas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Central de Listas</h1>
+        <nav>
+            <ul>
+                <li><a href="#favoritos">Favoritos</a></li>
+                <li><a href="#historico">Histórico</a></li>
+                <li><a href="#filtro">Filtro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção de Favoritos -->
+        <section id="favoritos">
+            <h2>Listas Favoritas</h2>
+            <div class="lista-container">
+                <div class="lista">
+                    <h3>Lista 1</h3>
+                    <p>Mercado: Supermercado X</p>
+                    <p>Itens: Arroz, Feijão, Leite</p>
+                    <button>Remover Favorito</button>
+                </div>
+                <!-- Adicione mais listas aqui -->
+            </div>
+        </section>
+
+        <!-- Seção de Histórico -->
+        <section id="historico">
+            <h2>Histórico de Listas</h2>
+            <div class="lista-container">
+                <div class="lista">
+                    <h3>Lista do dia 10/10/2024</h3>
+                    <p>Mercado: Mercado Y</p>
+                    <p>Itens: Pão, Ovos, Manteiga</p>
+                </div>
+                <!-- Adicione mais listas do histórico aqui -->
+            </div>
+        </section>
+
+        <!-- Seção de Filtro -->
+        <section id="filtro">
+            <h2>Filtrar Listas</h2>
+            <form>
+                <label for="filtro-item">Filtrar por item:</label>
+                <input type="text" id="filtro-item" name="filtro-item" placeholder="Digite um item...">
+                
+                <label for="filtro-mercado">Filtrar por mercado:</label>
+                <input type="text" id="filtro-mercado" name="filtro-mercado" placeholder="Digite o mercado...">
+
+                <button type="submit">Filtrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Central de Listas</p>
+    </footer>
+</body>
+</html>
